@@ -60,10 +60,6 @@ I have experience in competitive programming, full-stack development, and data-d
 ## 🧠 Problem Solving
 ![LeetCode Stats](https://leetcard.jacoblin.cool/Sajidursiam?theme=dark)
 
----
-
-## 📊 GitHub Stats
-![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=SajidurCodes&theme=dark)
 
 
 ---
@@ -76,4 +72,4 @@ I have experience in competitive programming, full-stack development, and data-d
 ### 🎯 Let’s Build Something Impactful
 I am open to collaboration, research, and challenging projects in **AI, ML, and Software Engineering**.
 
-[![](https://visitcount.itsvg.in/api?id=SajidurCodes&icon=0&color=0)](https://visitcount.itsvg.in)
+![Profile views](https://komarev.com/ghpvc/?username=SajidurCodes)
