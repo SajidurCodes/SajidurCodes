@@ -191,14 +191,32 @@ Full-Stack Products    → Next.js, React, Node.js, PostgreSQL, Prisma-based app
 
 
 ## 📊 GitHub Analytics
-<div align="center"> <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SIAVAI&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=FFFFFF" /> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SIAVAI&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=FFFFFF" /> </div>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=SIAVAI&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=FFFFFF" alt="GitHub Stats" />
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SIAVAI&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=FFFFFF" alt="Top Languages" />
+
+</div>
+
+---
 
 
 ## 🔥 GitHub Streak
 <div align="center"> <img src="https://streak-stats.demolab.com?user=SIAVAI&theme=tokyonight&hide_border=true&background=0D1117&ring=00F5A0&fire=00F5A0&currStreakLabel=00F5A0" /> </div>
-🧠 Problem Solving
+
+---
+
+
+## 🧠 Problem Solving
 <div align="center"> <img src="https://leetcard.jacoblin.cool/Sajidursiam?theme=dark&font=Fira%20Code&ext=heatmap" /> </div>
-📈 Activity Graph
+
+---
+
+## 📈 Activity Graph
 <div align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=SIAVAI&theme=tokyo-night&bg_color=0D1117&color=FFFFFF&line=00F5A0&point=00F5A0&area=true&hide_border=true" /> </div>
 
 
@@ -217,7 +235,7 @@ Currently Learning:
 ---
 
 
-##Currently Building:
+## Currently Building:
   - AI-powered applications
   - RAG-based knowledge systems
   - Backend APIs
@@ -239,4 +257,4 @@ I am open to collaboration, research, and challenging projects in:
 
 AI/ML Engineering · LLM Applications · RAG Systems · AI Agents · Data Engineering · Backend Development · Full-Stack Software Engineering
 
-<br/> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" /> </div> ```
+<br/> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" /> </div>
