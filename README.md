@@ -246,15 +246,10 @@ Currently Learning:
 
 
 ## ✍️ Quote
-<div align="center">
 
-“We don’t do this because it’s easy. We do this because we thought it would be easy.”
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=6AD3F3&center=true&vCenter=true&width=900&lines=My+life+is+like+a+Christopher+Nolan+movie...;Don't+try+to+understand+it—just+feel+it.🎬" />
+</p>
 
-</div>
-🤝 Let’s Build Something Impactful
-
-I am open to collaboration, research, and challenging projects in:
-
-AI/ML Engineering · LLM Applications · RAG Systems · AI Agents · Data Engineering · Backend Development · Full-Stack Software Engineering
 
 <br/> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" /> </div>
