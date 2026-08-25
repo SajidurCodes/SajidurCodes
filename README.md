@@ -1,5 +1,50 @@
+<!--
+═══════════════════════════════════════════════════════════════════════════
+  GITHUB PROFILE README  ·  Sajidur Rahman Siam  ·  @SajidurCodes
+═══════════════════════════════════════════════════════════════════════════
+
+  SETUP CHECKLIST — do these once, then delete this comment block:
+
+  [ ] 1. This file must live in a repo named EXACTLY  SajidurCodes/SajidurCodes
+         (repo name == username) and be PUBLIC, or nothing renders on your profile.
+
+  [ ] 2. Search this file for "TODO" — there are project placeholders to fill in.
+
+  [ ] 3. For the contribution-snake animation to work:
+         - Add the workflow file  .github/workflows/snake.yml  (provided separately)
+         - Go to  Settings > Actions > General > Workflow permissions
+           and select  "Read and write permissions"  > Save
+         - Run the workflow once manually (Actions tab > Generate Snake > Run workflow)
+
+  [ ] 4. Confirm your LeetCode username is exactly  Sajidursiam  (case-sensitive!).
+         If not, fix it in the "Problem Solving" section or delete that section.
+
+  [ ] 5. SELF-HOSTING THE STATS CARDS — the permanent fix for broken/rate-limited
+         analytics. The public instances are shared by millions of profiles and
+         run out of GitHub API quota constantly. Your own instance gets its own
+         5,000 requests/hour and basically never fails.
+
+         a. Create a classic GitHub token: Settings > Developer settings >
+            Personal access tokens > Tokens (classic) > Generate new.
+            Scope needed: just  read:user  (add  repo  only if you want
+            private-repo commits counted). Copy it.
+         b. Fork  github.com/anuraghazra/github-readme-stats
+            Fork  github.com/DenverCoder1/github-readme-streak-stats
+         c. On vercel.com: Add New > Project > import each fork > Deploy.
+         d. In each Vercel project: Settings > Environment Variables >
+            add  PAT_1  = your token. Then Deployments > Redeploy.
+         e. Swap the hostnames in the "GitHub Analytics" section below:
+              github-readme-stats.vercel.app   -> your-stats-app.vercel.app
+              nirzak-streak-stats.vercel.app   -> your-streak-app.vercel.app
+            Keep every query parameter exactly as-is.
+         f. With your own instance you can safely add back
+            &include_all_commits=true&count_private=true  to the stats URL.
+
+═══════════════════════════════════════════════════════════════════════════
+-->
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=230&section=header&text=Sajidur%20Rahman%20Siam&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=Backend-Heavy%20Full-Stack%20Engineer%20%C2%B7%20AI%20%26%20LLM%20Systems&descAlignY=53&descSize=17" width="100%" alt="Sajidur Rahman Siam" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=230&section=header&text=Sajidur%20Rahman%20Siam&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=Backend-Heavy%20Full-Stack%20Engineer%20%7C%20AI%20and%20LLM%20Systems&descAlignY=53&descSize=17" width="100%" alt="Sajidur Rahman Siam" />
 </div>
 
 <div align="center">
@@ -460,17 +505,19 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
 ## 📊 &nbsp; GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SajidurCodes&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0" alt="Sajidur's GitHub stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SajidurCodes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0" alt="Sajidur's GitHub stats" />
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9" alt="Top languages" />
 </div>
 
 <br />
 
 <div align="center">
-  <!-- If this card ever fails to load, swap the host for one of these mirrors:
-       https://nirzak-streak-stats.vercel.app/?user=SajidurCodes...
-       https://github-readme-streak-stats-eight.vercel.app/?user=SajidurCodes... -->
-  <img src="https://streak-stats.demolab.com?user=SajidurCodes&theme=tokyonight&hide_border=true&background=0D1117&border=0D1117&stroke=00F5A0&ring=00F5A0&fire=FF6B35&currStreakLabel=00F5A0&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub streak" />
+  <!-- Using the nirzak mirror because streak-stats.demolab.com is currently
+       rate-limited. If this one also fails, the permanent fix is self-hosting —
+       see the SELF-HOSTING note in the checklist at the top of this file.
+       Original host, kept as a fallback to swap back to:
+       https://streak-stats.demolab.com?user=SajidurCodes&theme=tokyonight&... -->
+  <img src="https://nirzak-streak-stats.vercel.app/?user=SajidurCodes&theme=tokyonight&hide_border=true&background=0D1117&border=0D1117&stroke=00F5A0&ring=00F5A0&fire=FF6B35&currStreakLabel=00F5A0&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub streak" />
 </div>
 
 <br />
