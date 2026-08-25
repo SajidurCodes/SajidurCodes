@@ -30,6 +30,16 @@ on:
     # 04:00 UTC daily = 10:00 Asia/Dhaka. GitHub queues cron jobs, so ±30 min.
     - cron: "0 4 * * *"
   workflow_dispatch:
+  # Re-runs automatically whenever THIS file changes, so edits to the card
+  # styling below take effect without remembering to click "Run workflow".
+  # Scoped to this single path on purpose: ordinary README edits shouldn't
+  # burn a run, and the SVGs this workflow commits aren't in `paths`, so it
+  # can't retrigger itself. (Commits made with GITHUB_TOKEN don't start new
+  # workflow runs either, so there's no loop risk regardless.)
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/readme-cards.yml
 
 permissions:
   contents: write
@@ -48,11 +58,15 @@ jobs:
       # include_all_commits=true is safe HERE (unlike on a shared host) because
       # this run has its own API quota. It counts every commit you've ever made
       # rather than just the current year.
+      #
+      # hide=stars,prs,issues drops three rows that currently read 0 and say
+      # nothing useful about your work. Add hide_rank=true as well if you'd
+      # rather not display the letter grade.
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: 'username=SajidurCodes&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0'
+          options: 'username=SajidurCodes&show_icons=true&include_all_commits=true&hide=stars,prs,issues&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0'
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           # Fail loudly instead of committing a "Something went wrong" card.
@@ -61,11 +75,19 @@ jobs:
           # profile until the next run. This way the last good card survives.
           fail_on_error: true
 
+      # size_weight=0 & count_weight=1 rank each language by HOW MANY of your
+      # repos use it, not by total bytes. Byte-weighting let one oversized repo
+      # (the Fortran/Meson/Cython signature says a vendored scientific Python
+      # library or a committed virtualenv) bury everything else at ~0%.
+      #
+      # hide= strips languages that aren't yours — they come from that repo's
+      # dependencies. Jupyter Notebook is deliberately NOT hidden; that's real
+      # ML work and it belongs on the card.
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: 'username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9'
+          options: 'username=SajidurCodes&layout=compact&langs_count=8&size_weight=0&count_weight=1&hide=fortran,meson,cython,c,c%2B%2B&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9'
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
