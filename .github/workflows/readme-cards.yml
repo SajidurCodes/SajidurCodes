@@ -1,0 +1,97 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Renders the GitHub stats cards in CI and commits them into this repo.
+#
+#  WHY THIS EXISTS:
+#    Fetching stats cards from a shared public instance means every visitor
+#    to your profile triggers a live GitHub API call through a service whose
+#    quota is pooled across millions of READMEs. When that quota runs out the
+#    card renders as a broken image — on your profile, to a recruiter.
+#    This workflow renders the same SVGs once a day inside your own repo, so
+#    visitors just load a static file. Nothing third-party is called at all.
+#
+#  WHERE THIS FILE GOES:
+#    .github/workflows/readme-cards.yml   (in the SajidurCodes/SajidurCodes repo)
+#
+#  ONE-TIME SETUP (same switch the snake workflow needs — if you already did
+#  it for snake.yml, it's done):
+#    1. Repo Settings > Actions > General
+#    2. "Workflow permissions" > select "Read and write permissions" > Save
+#    3. Actions tab > "Update README Cards" > Run workflow
+#
+#  AFTER the first green run, switch the two <img src> values in the
+#  "GitHub Analytics" section of README.md to  ./profile/stats.svg  and
+#  ./profile/top-langs.svg  (ready-to-paste lines are in a comment there).
+# ═══════════════════════════════════════════════════════════════════════
+
+name: Update README Cards
+
+on:
+  schedule:
+    # 04:00 UTC daily = 10:00 Asia/Dhaka. GitHub queues cron jobs, so ±30 min.
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # Styling params are identical to the ones the README used against the
+      # hosted instance, so the cards look exactly the same.
+      #
+      # include_all_commits=true is safe HERE (unlike on a shared host) because
+      # this run has its own API quota. It counts every commit you've ever made
+      # rather than just the current year.
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: 'username=SajidurCodes&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0'
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Fail loudly instead of committing a "Something went wrong" card.
+          # With the default (false) a transient API hiccup would overwrite a
+          # perfectly good SVG with an error graphic that then sits on your
+          # profile until the next run. This way the last good card survives.
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: 'username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9'
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      # ─────────────────────────────────────────────────────────────────
+      #  OPTIONAL: pinned project cards.
+      #  Your README's "Featured Projects" section currently uses TODO
+      #  placeholders pointing at the hosted instance. Once you fill in real
+      #  repo names, you can generate those cards here too — uncomment and
+      #  duplicate per repo, then point the README at ./profile/pin-<repo>.svg
+      # ─────────────────────────────────────────────────────────────────
+      # - name: Generate pin card
+      #   uses: stats-organization/github-readme-stats-action@v2
+      #   with:
+      #     card: pin
+      #     options: 'username=SajidurCodes&repo=YOUR_REPO_NAME&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9'
+      #     path: profile/pin-YOUR_REPO_NAME.svg
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     fail_on_error: true
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          # Exits cleanly when the cards are unchanged, so the run stays green
+          # instead of failing on an empty commit.
+          git commit -m "chore: update README stat cards" || exit 0
+          git push
