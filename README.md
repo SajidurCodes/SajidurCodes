@@ -511,35 +511,25 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
 ```
 
 ---
-
 ## 📊 &nbsp; GitHub Analytics
 
 <div align="center">
-  <!-- ══════════════════════════════════════════════════════════════════════
-       These two cards are served by github-stats-extended.vercel.app — the
-       maintained successor to the archived anuraghazra/github-readme-stats.
-       It's a public shared instance, so it can still rate-limit occasionally.
-
-       TO MAKE THEM UNBREAKABLE: add .github/workflows/readme-cards.yml, run it
-       once, then replace the two <img> lines below with these two:
-
+  <!-- Rendered in CI by .github/workflows/readme-cards.yml and committed to
+       profile/ — static files from this repo, so these cannot rate-limit.
+       Refreshes daily at 04:00 UTC. To retune the styling, edit the `options`
+       query string in that workflow, not this file, then re-run the workflow.
+       Visual editor for the params: https://github-stats-extended.vercel.app/frontend -->
   <img height="180em" src="./profile/stats.svg" alt="Sajidur's GitHub stats" />
   <img height="180em" src="./profile/top-langs.svg" alt="Top languages" />
-
-       Do that only AFTER the workflow's first run goes green, otherwise the
-       files don't exist yet and you'll get broken images.
-       ══════════════════════════════════════════════════════════════════════ -->
-  <img height="180em" src="https://github-stats-extended.vercel.app/api?username=SajidurCodes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0" alt="Sajidur's GitHub stats" />
-  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9" alt="Top languages" />
 </div>
 
 <br />
 
 <div align="center">
-  <!-- Using the nirzak mirror because streak-stats.demolab.com is currently
-       rate-limited. If this one also fails, the permanent fix is self-hosting —
-       see the SELF-HOSTING note in the checklist at the top of this file.
-       Original host, kept as a fallback to swap back to:
+  <!-- This one is still fetched live from a shared public host, so it can go
+       blank on a bad day — there's no maintained CI equivalent for streaks.
+       See item 7 in the checklist at the top of this file for the fix.
+       Fallback host to try first if it breaks:
        https://streak-stats.demolab.com?user=SajidurCodes&theme=tokyonight&... -->
   <img src="https://nirzak-streak-stats.vercel.app/?user=SajidurCodes&theme=tokyonight&hide_border=true&background=0D1117&border=0D1117&stroke=00F5A0&ring=00F5A0&fire=FF6B35&currStreakLabel=00F5A0&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub streak" />
 </div>
@@ -561,7 +551,6 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
     <img alt="Snake animation eating my GitHub contribution graph" src="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake.svg" width="100%" />
   </picture>
 </div>
-
 <!-- If the snake shows a broken image: the workflow hasn't run yet.
      Actions tab > "Generate Snake Animation" > Run workflow.
      Also confirm Settings > Actions > General > "Read and write permissions". -->
