@@ -26,29 +26,26 @@
          Card wizard, if you ever want to retune a card visually:
          https://github-stats-extended.vercel.app/frontend
 
-  [ ] 6. RECOMMENDED UPGRADE — make the stats cards un-breakable by generating them
-         in CI instead of fetching them at page-view time. Add the workflow file
-         readme-cards.yml (provided separately) to .github/workflows/. It renders
-         the SVGs and commits them into this repo, so viewers load static files
-         from GitHub and no third-party service is called at all. No Vercel
-         account and no personal access token needed.
+  [x] 6. DONE — stats + top-langs are now rendered in CI by
+         .github/workflows/readme-cards.yml and committed to profile/, so the
+         README loads them as static files from this repo. Nothing third-party is
+         called at page-view time, which means they cannot rate-limit.
+         To restyle them, edit the `options` query string in that workflow and
+         re-run it — editing this file will not change the cards.
 
-         After its first successful run, swap these two lines in the
-         "GitHub Analytics" section below to read from the committed files:
-           src="./profile/stats.svg"
-           src="./profile/top-langs.svg"
-         (Ready-to-paste versions are in a comment right there. Don't switch
-          before the first run succeeds or you'll get broken images.)
+  [x] 7. RESOLVED — the streak card and contribution activity graph were removed
+         on 2026-08-26. Both were separate projects on shared public hosts with
+         no CI equivalent, both were failing, and the snake animation already
+         shows the same contribution data. Every remaining image on this profile
+         is now either a static file in this repo or a shields.io badge.
 
-  [ ] 7. STILL ON SHARED PUBLIC HOSTS — no maintained CI equivalent exists for
-         these two, so they can still go blank on a bad day:
-           - streak card    (nirzak-streak-stats.vercel.app)
-           - activity graph (github-readme-activity-graph.vercel.app)
-         If the streak card fails, its upstream is DenverCoder1/github-readme-streak-stats
-         — check that repo for a deprecation notice and fork + deploy to Vercel
-         with an env var  PAT_1  = a classic token with  read:user  scope.
-         Remember to hit Deployments > Redeploy after adding the env var; env
-         vars only apply to builds created after they are set.
+  [ ] 8. THE REAL GAP — nothing above fixes this one. Your public repos are
+         ~97% Python and Jupyter; TypeScript is under 1%. The README's core
+         claim is backend TypeScript/Node/Postgres depth, so a screener who
+         checks your repos sees a story that doesn't match the headline.
+         Push the Node/Express/Prisma/Next.js work to public repos, then fill
+         in the four TODO project cards below. That single action does more for
+         your job hunt than every widget in this file combined.
 
 ═══════════════════════════════════════════════════════════════════════════
 -->
@@ -511,6 +508,7 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
 ```
 
 ---
+
 ## 📊 &nbsp; GitHub Analytics
 
 <div align="center">
@@ -518,26 +516,14 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
        profile/ — static files from this repo, so these cannot rate-limit.
        Refreshes daily at 04:00 UTC. To retune the styling, edit the `options`
        query string in that workflow, not this file, then re-run the workflow.
-       Visual editor for the params: https://github-stats-extended.vercel.app/frontend -->
+       Visual editor for the params: https://github-stats-extended.vercel.app/frontend
+
+       A streak card and a contribution activity graph used to sit here. Both
+       were removed on 2026-08-26: they're separate projects with no CI
+       equivalent, they were failing on shared public hosts, and the snake
+       animation below already visualises the same contribution data. -->
   <img height="180em" src="./profile/stats.svg" alt="Sajidur's GitHub stats" />
   <img height="180em" src="./profile/top-langs.svg" alt="Top languages" />
-</div>
-
-<br />
-
-<div align="center">
-  <!-- This one is still fetched live from a shared public host, so it can go
-       blank on a bad day — there's no maintained CI equivalent for streaks.
-       See item 7 in the checklist at the top of this file for the fix.
-       Fallback host to try first if it breaks:
-       https://streak-stats.demolab.com?user=SajidurCodes&theme=tokyonight&... -->
-  <img src="https://nirzak-streak-stats.vercel.app/?user=SajidurCodes&theme=tokyonight&hide_border=true&background=0D1117&border=0D1117&stroke=00F5A0&ring=00F5A0&fire=FF6B35&currStreakLabel=00F5A0&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub streak" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SajidurCodes&theme=tokyo-night&bg_color=0D1117&color=C9D1D9&line=00F5A0&point=FFFFFF&area=true&area_color=00F5A0&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution activity graph" width="100%" />
 </div>
 
 ---
@@ -551,6 +537,7 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
     <img alt="Snake animation eating my GitHub contribution graph" src="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake.svg" width="100%" />
   </picture>
 </div>
+
 <!-- If the snake shows a broken image: the workflow hasn't run yet.
      Actions tab > "Generate Snake Animation" > Run workflow.
      Also confirm Settings > Actions > General > "Read and write permissions". -->
