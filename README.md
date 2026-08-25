@@ -19,26 +19,36 @@
   [ ] 4. Confirm your LeetCode username is exactly  Sajidursiam  (case-sensitive!).
          If not, fix it in the "Problem Solving" section or delete that section.
 
-  [ ] 5. SELF-HOSTING THE STATS CARDS — the permanent fix for broken/rate-limited
-         analytics. The public instances are shared by millions of profiles and
-         run out of GitHub API quota constantly. Your own instance gets its own
-         5,000 requests/hour and basically never fails.
+  [ ] 5. ALREADY DONE FOR YOU — the stats + top-langs + project pin cards now point
+         at  github-stats-extended.vercel.app  (stats-organization/github-stats-extended),
+         the actively maintained successor to the ARCHIVED anuraghazra/github-readme-stats.
+         Migration was a pure domain swap; every query parameter is unchanged.
+         Card wizard, if you ever want to retune a card visually:
+         https://github-stats-extended.vercel.app/frontend
 
-         a. Create a classic GitHub token: Settings > Developer settings >
-            Personal access tokens > Tokens (classic) > Generate new.
-            Scope needed: just  read:user  (add  repo  only if you want
-            private-repo commits counted). Copy it.
-         b. Fork  github.com/anuraghazra/github-readme-stats
-            Fork  github.com/DenverCoder1/github-readme-streak-stats
-         c. On vercel.com: Add New > Project > import each fork > Deploy.
-         d. In each Vercel project: Settings > Environment Variables >
-            add  PAT_1  = your token. Then Deployments > Redeploy.
-         e. Swap the hostnames in the "GitHub Analytics" section below:
-              github-readme-stats.vercel.app   -> your-stats-app.vercel.app
-              nirzak-streak-stats.vercel.app   -> your-streak-app.vercel.app
-            Keep every query parameter exactly as-is.
-         f. With your own instance you can safely add back
-            &include_all_commits=true&count_private=true  to the stats URL.
+  [ ] 6. RECOMMENDED UPGRADE — make the stats cards un-breakable by generating them
+         in CI instead of fetching them at page-view time. Add the workflow file
+         readme-cards.yml (provided separately) to .github/workflows/. It renders
+         the SVGs and commits them into this repo, so viewers load static files
+         from GitHub and no third-party service is called at all. No Vercel
+         account and no personal access token needed.
+
+         After its first successful run, swap these two lines in the
+         "GitHub Analytics" section below to read from the committed files:
+           src="./profile/stats.svg"
+           src="./profile/top-langs.svg"
+         (Ready-to-paste versions are in a comment right there. Don't switch
+          before the first run succeeds or you'll get broken images.)
+
+  [ ] 7. STILL ON SHARED PUBLIC HOSTS — no maintained CI equivalent exists for
+         these two, so they can still go blank on a bad day:
+           - streak card    (nirzak-streak-stats.vercel.app)
+           - activity graph (github-readme-activity-graph.vercel.app)
+         If the streak card fails, its upstream is DenverCoder1/github-readme-streak-stats
+         — check that repo for a deprecation notice and fork + deploy to Vercel
+         with an env var  PAT_1  = a classic token with  read:user  scope.
+         Remember to hit Deployments > Redeploy after adding the env var; env
+         vars only apply to builds created after they are set.
 
 ═══════════════════════════════════════════════════════════════════════════
 -->
@@ -383,7 +393,7 @@ flowchart LR
 
 <div align="center">
   <a href="https://github.com/SajidurCodes/REPO-NAME-1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-1&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project one" />
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-1&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project one" />
   </a>
 </div>
 
@@ -408,7 +418,7 @@ flowchart LR
 
 <div align="center">
   <a href="https://github.com/SajidurCodes/REPO-NAME-2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project two" />
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project two" />
   </a>
 </div>
 
@@ -435,7 +445,7 @@ flowchart LR
 
 <div align="center">
   <a href="https://github.com/SajidurCodes/REPO-NAME-3">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project three" />
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project three" />
   </a>
 </div>
 
@@ -459,7 +469,7 @@ flowchart LR
 
 <div align="center">
   <a href="https://github.com/SajidurCodes/REPO-NAME-4">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-4&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project four" />
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-4&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project four" />
   </a>
 </div>
 
@@ -505,8 +515,22 @@ Automations         →  n8n workflows, cron jobs, webhook-driven background pro
 ## 📊 &nbsp; GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SajidurCodes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0" alt="Sajidur's GitHub stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9" alt="Top languages" />
+  <!-- ══════════════════════════════════════════════════════════════════════
+       These two cards are served by github-stats-extended.vercel.app — the
+       maintained successor to the archived anuraghazra/github-readme-stats.
+       It's a public shared instance, so it can still rate-limit occasionally.
+
+       TO MAKE THEM UNBREAKABLE: add .github/workflows/readme-cards.yml, run it
+       once, then replace the two <img> lines below with these two:
+
+  <img height="180em" src="./profile/stats.svg" alt="Sajidur's GitHub stats" />
+  <img height="180em" src="./profile/top-langs.svg" alt="Top languages" />
+
+       Do that only AFTER the workflow's first run goes green, otherwise the
+       files don't exist yet and you'll get broken images.
+       ══════════════════════════════════════════════════════════════════════ -->
+  <img height="180em" src="https://github-stats-extended.vercel.app/api?username=SajidurCodes&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9&ring_color=00F5A0" alt="Sajidur's GitHub stats" />
+  <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=SajidurCodes&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&text_color=C9D1D9" alt="Top languages" />
 </div>
 
 <br />
