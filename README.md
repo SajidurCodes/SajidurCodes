@@ -319,44 +319,7 @@ flowchart LR
 
 </td>
 </tr>
-<tr>
-<td colspan="2" valign="top">
 
-### 🚀 DevOps, Cloud & Testing
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**Containers & Cloud**
-
-- Docker & containerised services
-- AWS — EC2, S3, IAM
-- Linux — permissions, processes, utilities
-- NGINX reverse proxy & deployment
-
-</td>
-<td width="33%" valign="top">
-
-**CI/CD & Delivery**
-
-- GitHub Actions pipelines
-- Automated build → test → deploy
-- Environment-based configuration
-- Vercel deployments
-
-</td>
-<td width="33%" valign="top">
-
-**Testing & Quality**
-
-- Unit & integration testing
-- Advanced mocking techniques
-- REST API testing — Vitest + Supertest
-- Software design & architecture fundamentals
-
-</td>
-</tr>
 </table>
 
 </td>
@@ -367,45 +330,31 @@ flowchart LR
 
 ## 🚀 &nbsp; Featured Projects
 
-<!-- ─────────────────────────────────────────────────────────────────────
-  TODO — HOW TO FILL THIS IN (takes ~5 minutes):
-
-  For each project below, replace THREE things:
-    1. REPO-NAME-1   →  the exact repo name, e.g. healthcare-appointment-api
-    2. The project title in the h3 heading
-    3. The description line and the tech badges
-
-  Then delete any card you don't need, and delete the "coming soon" card.
-
-  The <img> is a live GitHub repo card — it auto-pulls stars, forks and
-  description, so it stays current with zero maintenance.
-  A repo card ONLY renders if the repo is public and the name is exact.
-───────────────────────────────────────────────────────────────────────── -->
-
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<h3 align="center">🏥 TODO: Project One Title</h3>
+<h3 align="center">📄 DocuMind — Document Q&A</h3>
 
 <div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-1">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-1&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project one" />
+  <a href="https://github.com/SajidurCodes/DocuMind">
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=DocuMind&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="DocuMind repository" />
   </a>
 </div>
 
-**TODO:** One sentence on what it does and the hardest problem you solved — recruiters read this line, so lead with impact, not features.
+Turns PDF and TXT documents into searchable answers using keyword-based RAG and Groq, preserving PDF page references through extraction, storage, and retrieval; verified with **13 passing regression tests**.
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Node.js-111111?style=flat-square&logo=nodedotjs&logoColor=5FA04E" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-111111?style=flat-square&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/PostgreSQL-111111?style=flat-square&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Prisma-111111?style=flat-square&logo=prisma&logoColor=2D3748" alt="Prisma" />
+  <img src="https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=FFD43B" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-111111?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Groq-111111?style=flat-square&logoColor=F55036" alt="Groq" />
+  <img src="https://img.shields.io/badge/SQLite-111111?style=flat-square&logo=sqlite&logoColor=74C0FC" alt="SQLite" />
+  <img src="https://img.shields.io/badge/Render-111111?style=flat-square&logo=render&logoColor=white" alt="Render" />
 </div>
 
 <div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-1"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a>
+  <a href="https://github.com/SajidurCodes/DocuMind"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
+  <a href="https://documind-vc21.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=render&logoColor=white" alt="Live demo" /></a>
 </div>
 
 </td>
