@@ -1,558 +1,192 @@
-<!--
-═══════════════════════════════════════════════════════════════════════════
-  GITHUB PROFILE README  ·  Sajidur Rahman Siam  ·  @SajidurCodes
-═══════════════════════════════════════════════════════════════════════════
-
-  SETUP CHECKLIST — do these once, then delete this comment block:
-
-  [ ] 1. This file must live in a repo named EXACTLY  SajidurCodes/SajidurCodes
-         (repo name == username) and be PUBLIC, or nothing renders on your profile.
-
-  [ ] 2. Search this file for "TODO" — there are project placeholders to fill in.
-
-  [ ] 3. For the contribution-snake animation to work:
-         - Add the workflow file  .github/workflows/snake.yml  (provided separately)
-         - Go to  Settings > Actions > General > Workflow permissions
-           and select  "Read and write permissions"  > Save
-         - Run the workflow once manually (Actions tab > Generate Snake > Run workflow)
-
-  [ ] 4. Confirm your LeetCode username is exactly  Sajidursiam  (case-sensitive!).
-         If not, fix it in the "Problem Solving" section or delete that section.
-
-  [ ] 5. ALREADY DONE FOR YOU — the stats + top-langs + project pin cards now point
-         at  github-stats-extended.vercel.app  (stats-organization/github-stats-extended),
-         the actively maintained successor to the ARCHIVED anuraghazra/github-readme-stats.
-         Migration was a pure domain swap; every query parameter is unchanged.
-         Card wizard, if you ever want to retune a card visually:
-         https://github-stats-extended.vercel.app/frontend
-
-  [x] 6. DONE — stats + top-langs are now rendered in CI by
-         .github/workflows/readme-cards.yml and committed to profile/, so the
-         README loads them as static files from this repo. Nothing third-party is
-         called at page-view time, which means they cannot rate-limit.
-         To restyle them, edit the `options` query string in that workflow and
-         re-run it — editing this file will not change the cards.
-
-  [x] 7. RESOLVED — the streak card and contribution activity graph were removed
-         on 2026-08-26. Both were separate projects on shared public hosts with
-         no CI equivalent, both were failing, and the snake animation already
-         shows the same contribution data. Every remaining image on this profile
-         is now either a static file in this repo or a shields.io badge.
-
-  [ ] 8. THE REAL GAP — nothing above fixes this one. Your public repos are
-         ~97% Python and Jupyter; TypeScript is under 1%. The README's core
-         claim is backend TypeScript/Node/Postgres depth, so a screener who
-         checks your repos sees a story that doesn't match the headline.
-         Push the Node/Express/Prisma/Next.js work to public repos, then fill
-         in the four TODO project cards below. That single action does more for
-         your job hunt than every widget in this file combined.
-
-═══════════════════════════════════════════════════════════════════════════
--->
+<!-- PROFILE HEADER -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=230&section=header&text=Sajidur%20Rahman%20Siam&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=Backend-Heavy%20Full-Stack%20Engineer%20%7C%20AI%20and%20LLM%20Systems&descAlignY=53&descSize=17" width="100%" alt="Sajidur Rahman Siam" />
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:12344A,100:087F70&height=215&section=header&text=Sajidur%20Rahman%20Siam&fontSize=44&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Full-Stack%20Development%20%26%20AI%20Integration&descAlignY=56&descSize=16"
+    width="100%"
+    alt="Sajidur Rahman Siam — Backend Developer, Full-Stack Development and AI Integration"
+  />
 </div>
 
 <div align="center">
-  <a href="https://github.com/SajidurCodes">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2600&pause=900&color=00F5A0&center=true&vCenter=true&width=700&height=45&lines=Backend-Heavy+Full-Stack+Engineer;Node.js+%C2%B7+Express+%C2%B7+TypeScript+%C2%B7+PostgreSQL;Next.js+%C2%B7+Prisma+%C2%B7+REST+API+Architecture;AI+Engineering+%3A+RAG+%C2%B7+LangGraph+%C2%B7+Agents;Production+Systems%2C+Not+Just+Tutorials" alt="Backend-heavy full-stack engineer building AI systems" />
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1100&color=35DDA5&center=true&vCenter=true&width=680&height=45&lines=Node.js+%2B+TypeScript+for+backend+development;PostgreSQL+%2B+Prisma+for+relational+data;React+%2B+Next.js+for+full-stack+apps;Python+%2B+FastAPI+for+AI+integration"
+    alt="Node.js and TypeScript · PostgreSQL and Prisma · React and Next.js · Python and FastAPI"
+  />
+</div>
+
+<p align="center">
+  <a href="mailto:sajidursiam18@gmail.com">
+    <img src="https://img.shields.io/badge/Open_to_work-Backend_%26_Full--Stack-087F70?style=for-the-badge&labelColor=162733" alt="Open to backend and full-stack roles" />
   </a>
-</div>
+  <a href="https://github.com/SajidurCodes?tab=followers">
+    <img src="https://img.shields.io/github/followers/SajidurCodes?style=for-the-badge&logo=github&color=087F70&labelColor=162733&label=Followers" alt="GitHub followers" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=SajidurCodes&style=for-the-badge&color=087F70&label=Profile+views" alt="Profile views" />
+</p>
 
-<div align="center">
-  <a href="https://github.com/SajidurCodes"><img src="https://komarev.com/ghpvc/?username=SajidurCodes&style=for-the-badge&color=00F5A0&labelColor=0D1117&label=PROFILE+VIEWS" alt="Profile views" /></a>
-  &nbsp;
-  <a href="https://github.com/SajidurCodes?tab=followers"><img src="https://img.shields.io/github/followers/SajidurCodes?style=for-the-badge&color=00F5A0&labelColor=0D1117&logo=github&logoColor=00F5A0&label=FOLLOWERS" alt="GitHub followers" /></a>
-  &nbsp;
-  <a href="mailto:sajidursiam18@gmail.com"><img src="https://img.shields.io/badge/OPEN_TO_WORK-AI%2FML%20%26%20Full--Stack-00F5A0?style=for-the-badge&labelColor=0D1117" alt="Open to work" /></a>
-</div>
-
-<br />
+<p align="center">
+  <a href="#-featured-projects">Projects</a> ·
+  <a href="#-technical-skills">Skills</a> ·
+  <a href="#-github-activity">GitHub Activity</a> ·
+  <a href="#-connect">Connect</a>
+</p>
 
 ---
 
-## 👋 &nbsp; Who I Am
+## 👋 About me
 
-I build the parts of a product that have to **not fall over** — APIs, auth, data models, payment flows, error boundaries — and I've spent the last stretch layering AI on top of that foundation rather than treating it as a separate career.
+I'm a **Computer Science and Engineering graduate from BRAC University** in Dhaka, Bangladesh. I build backends with **Node.js, Express, and TypeScript**, and use **React and Next.js** to build the interfaces around them.
 
-My path into AI wasn't backwards. I started at **classical ML and the math**, moved through **deep learning architectures**, then **MLOps**, then **data engineering**, and only then into **AI/LLM engineering**. That order matters: when a RAG pipeline returns garbage, I debug it as a retrieval and evaluation problem, not by shuffling prompts and hoping.
+I enjoy working on the rules behind an API. In RentNest, for example, a tenant can pay only after the landlord approves the rental request. The backend then verifies Stripe's webhook signature before updating the payment status. My Python projects explore a different question: how can someone check the result an application gives them? In DocuMind, readers can follow an answer back to the page it came from.
 
-```ts
-const sajidur: Engineer = {
-  base:          "Backend Engineering — Node.js · Express · TypeScript · PostgreSQL",
-  frontend:      "Next.js (App Router, Server Actions, TanStack) · React · Tailwind · shadcn/ui",
-  aiTrack:       "ML Foundations → Deep Learning → MLOps → Data Eng → AI Engineering",
-  buildingNow:   ["RAG systems", "agentic workflows", "production REST APIs"],
-  strongestAt:   "designing an API + schema that survives real traffic and real edge cases",
-  lookingFor:    ["AI / ML Engineer", "AI Engineer (LLM)", "Full-Stack Engineer w/ ML"],
-  openTo:        ["Remote", "Hybrid", "Onsite"],
-  currentlyRTFM: "LangGraph state machines & agent evaluation",
-};
-```
+## 🚀 Featured projects
 
 <table>
-<tr>
-<td width="33%" valign="top" align="center">
-
-**🔧 Where I'm Deep**
-
-Backend architecture, relational data
-modeling, auth & security flows,
-API design that scales
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**🤖 Where I'm Building**
-
-RAG pipelines, vector search,
-LLM orchestration, agents,
-AI-integrated services
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**🎨 Where I'm Solid**
-
-Next.js app-router frontends,
-dashboards, data tables,
-React component work
-
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🏠 RentNest</h3>
+      <p><strong>Full-stack rental marketplace</strong></p>
+      <p>Tenants search properties and submit rental requests. Landlords approve requests, and tenants pay through Stripe Checkout. The Express API enforces role permissions and verifies payment webhooks. A Next.js dashboard gives each user access to the actions their role allows.</p>
+      <p><code>TypeScript</code> <code>Express</code> <code>PostgreSQL</code> <code>Prisma</code> <code>Next.js</code> <code>Stripe</code></p>
+      <p>
+        <a href="https://github.com/SajidurCodes/RentNest"><strong>Backend ↗</strong></a> ·
+        <a href="https://github.com/SajidurCodes/RentNest-Frontend">Frontend</a> ·
+        <a href="https://rent-nest-frontend-theta.vercel.app/">Live demo</a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🗺️ Tour Management System</h3>
+      <p><strong>Tour booking and payments in Bangladesh</strong></p>
+      <p>Travelers can browse tours, book dates, pay through SSLCommerz, and check their booking status. The backend uses JWT access and refresh tokens. Role-protected routes let administrators manage tours, users, guides, and payments.</p>
+      <p><code>Node.js</code> <code>Express</code> <code>MongoDB</code> <code>Mongoose</code> <code>React</code> <code>SSLCommerz</code></p>
+      <p><a href="https://github.com/SajidurCodes/Tour-Management"><strong>Repository ↗</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📄 DocuMind</h3>
+      <p><strong>Document Q&amp;A with page citations</strong></p>
+      <p>Upload a PDF or text file and ask a question in the browser. DocuMind retrieves passages by keyword and sends them to a language model through Groq. It preserves PDF page numbers during extraction so readers can check the cited passage themselves.</p>
+      <p><code>Python</code> <code>FastAPI</code> <code>SQLite</code> <code>Groq</code> <code>Render</code></p>
+      <p>
+        <a href="https://github.com/SajidurCodes/DocuMind"><strong>Repository ↗</strong></a> ·
+        <a href="https://documind-vc21.onrender.com/">Live demo</a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔌 DataBridge MCP</h3>
+      <p><strong>CSV inspection through an API and MCP tools</strong></p>
+      <p>Exposes CSV inspection through FastAPI and the Model Context Protocol (MCP). An API client or an MCP client can request an inspection. The repository includes profiling benchmarks and a suite of <strong>91 passing tests</strong>.</p>
+      <p><code>Python</code> <code>FastAPI</code> <code>MCP</code> <code>CSV</code></p>
+      <p><a href="https://github.com/SajidurCodes/Databridge-MCP"><strong>Repository ↗</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📈 ChurnLens</h3>
+      <p><strong>Customer churn prediction and model serving</strong></p>
+      <p>Compared baseline models, evaluated calibration, and selected a decision threshold before serving the frozen model through FastAPI. On the held-out test set, the model achieved <strong>0.9723 ROC-AUC</strong> and <strong>0.8872 average precision</strong>. A fresh checkout passed 78 tests.</p>
+      <p><code>Python</code> <code>scikit-learn</code> <code>FastAPI</code></p>
+      <p><a href="https://github.com/SajidurCodes/ChurnLens"><strong>Repository ↗</strong></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💬 LangChain Runnable Chatbot</h3>
+      <p><strong>Question routing and structured LLM responses</strong></p>
+      <p>A keyword classifier routes programming, math, and general questions without an extra LLM call. Each route generates an answer, summary, and keywords in parallel. Pydantic validates the response before Streamlit displays it.</p>
+      <p><code>Python</code> <code>LangChain</code> <code>Pydantic</code> <code>Groq</code> <code>Streamlit</code></p>
+      <p><a href="https://github.com/SajidurCodes/LangChain-Chatbot"><strong>Repository ↗</strong></a></p>
+    </td>
+  </tr>
 </table>
 
----
-
-## 🌐 &nbsp; Reach Me
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/sajidur-rahman-siam-17870b310"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:sajidursiam18@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/SajidurCodes"><img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.kaggle.com/sajidursiam"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" /></a>
-  <a href="https://medium.com/@sajidursiam18"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
-  <a href="https://x.com/SajidurSiamVai"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-</div>
-
----
-
-## 🗺️ &nbsp; How I Got Into AI — The Actual Route
-
-```mermaid
-flowchart LR
-    A("🧮 ML Foundations<br/>NumPy · Pandas · Sklearn<br/>Regression · Trees · SVM<br/>Clustering · PCA")
-    B("🧠 Deep Learning<br/>ANN · CNN · RNN · LSTM<br/>Transformers<br/>PyTorch · TensorFlow · Keras")
-    C("⚙️ MLOps<br/>MLflow · Docker<br/>Experiment Tracking<br/>CI/CD · Model Serving")
-    D("🗄️ Data Engineering<br/>SQL · PostgreSQL<br/>ETL Pipelines<br/>Modeling · Warehousing")
-    E("🤖 AI Engineering<br/>LLM · RAG · Vector DB<br/>LangChain · LangGraph<br/>LangSmith · MCP · Agents")
-
-    A --> B --> C --> D --> E
-
-    linkStyle default stroke:#00F5A0,stroke-width:2px
-    style A fill:#161b22,stroke:#00F5A0,stroke-width:2px,color:#e6edf3
-    style B fill:#161b22,stroke:#00F5A0,stroke-width:2px,color:#e6edf3
-    style C fill:#161b22,stroke:#00F5A0,stroke-width:2px,color:#e6edf3
-    style D fill:#161b22,stroke:#00F5A0,stroke-width:2px,color:#e6edf3
-    style E fill:#0f2027,stroke:#00F5A0,stroke-width:4px,color:#00F5A0
-```
-
-> Foundations first, buzzwords last. I can explain *why* a chunking strategy changes retrieval quality, not just which library call does it.
-
----
-
-## 🛠️ &nbsp; Tech Arsenal
-
-<div align="center">
-
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=ts,js,python,cpp&theme=dark" alt="TypeScript, JavaScript, Python, C++" />
-
-**Backend & Runtime**
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,django,prisma&theme=dark" alt="Node.js, Express, Django, Prisma" />
-
-**Databases**
-
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,supabase&theme=dark" alt="PostgreSQL, MongoDB, MySQL, Supabase" />
-
-**Frontend**
-
-<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=dark" alt="Next.js, React, Tailwind CSS, HTML, CSS" />
-
-**AI · ML · Data Science**
-
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn&theme=dark" alt="PyTorch, TensorFlow, Scikit-learn" />
-
-**DevOps · Cloud · Tooling**
-
-<img src="https://skillicons.dev/icons?i=docker,aws,linux,nginx,git,github,githubactions,vercel,postman,vitest,vscode&theme=dark&perline=11" alt="Docker, AWS, Linux, NGINX, Git, GitHub, GitHub Actions, Vercel, Postman, Vitest, VS Code" />
-
-</div>
-
-<div align="center">
-
-<br />
-
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=00F5A0" alt="LangChain" />
-<img src="https://img.shields.io/badge/LangGraph-0D1117?style=for-the-badge&labelColor=0D1117&color=1C3C3C" alt="LangGraph" />
-<img src="https://img.shields.io/badge/LangSmith-0D1117?style=for-the-badge&labelColor=0D1117&color=1C3C3C" alt="LangSmith" />
-<img src="https://img.shields.io/badge/MCP-0D1117?style=for-the-badge&logo=anthropic&logoColor=00F5A0&labelColor=0D1117&color=1C3C3C" alt="Model Context Protocol" />
-<img src="https://img.shields.io/badge/OpenAI_API-111111?style=for-the-badge&logo=openai&logoColor=00F5A0" alt="OpenAI API" />
-<img src="https://img.shields.io/badge/Hugging_Face-111111?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Hugging Face" />
-<br />
-<img src="https://img.shields.io/badge/RAG-111111?style=for-the-badge&labelColor=111111&color=00A67E" alt="RAG" />
-<img src="https://img.shields.io/badge/pgvector-111111?style=for-the-badge&logo=postgresql&logoColor=00F5A0" alt="pgvector" />
-<img src="https://img.shields.io/badge/Vector_Search-111111?style=for-the-badge&labelColor=111111&color=00A67E" alt="Vector search" />
-<img src="https://img.shields.io/badge/Embeddings-111111?style=for-the-badge&labelColor=111111&color=00A67E" alt="Embeddings" />
-<img src="https://img.shields.io/badge/AI_Agents-111111?style=for-the-badge&labelColor=111111&color=00A67E" alt="AI agents" />
-<img src="https://img.shields.io/badge/Fine--tuning_%26_LoRA-111111?style=for-the-badge&labelColor=111111&color=00A67E" alt="Fine-tuning and LoRA" />
-<br />
-<img src="https://img.shields.io/badge/NumPy-111111?style=for-the-badge&logo=numpy&logoColor=4DABCF" alt="NumPy" />
-<img src="https://img.shields.io/badge/Pandas-111111?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-<img src="https://img.shields.io/badge/Matplotlib-111111?style=for-the-badge&logo=python&logoColor=5AA9E6" alt="Matplotlib" />
-<img src="https://img.shields.io/badge/Keras-111111?style=for-the-badge&logo=keras&logoColor=D00000" alt="Keras" />
-<img src="https://img.shields.io/badge/Jupyter-111111?style=for-the-badge&logo=jupyter&logoColor=F37626" alt="Jupyter" />
-<img src="https://img.shields.io/badge/MLflow-111111?style=for-the-badge&logo=mlflow&logoColor=0194E2" alt="MLflow" />
-<img src="https://img.shields.io/badge/n8n-111111?style=for-the-badge&logo=n8n&logoColor=EA4B71" alt="n8n" />
-<br />
-<img src="https://img.shields.io/badge/Zod-111111?style=for-the-badge&logo=zod&logoColor=3E67B1" alt="Zod" />
-<img src="https://img.shields.io/badge/TanStack_Query-111111?style=for-the-badge&logo=reactquery&logoColor=FF4154" alt="TanStack Query" />
-<img src="https://img.shields.io/badge/shadcn%2Fui-111111?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn/ui" />
-<img src="https://img.shields.io/badge/JWT-111111?style=for-the-badge&logo=jsonwebtokens&logoColor=00F5A0" alt="JWT" />
-<img src="https://img.shields.io/badge/Stripe-111111?style=for-the-badge&logo=stripe&logoColor=635BFF" alt="Stripe" />
-<img src="https://img.shields.io/badge/Cloudinary-111111?style=for-the-badge&logo=cloudinary&logoColor=3448C5" alt="Cloudinary" />
-
-</div>
-
----
-
-## 🧠 &nbsp; What I Can Actually Do
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ⚙️ Backend Engineering &nbsp;`primary`
-
-- Layered architecture — route → controller → service → data
-- Modular, multi-domain project structure that scales past 50 endpoints
-- Node.js internals: event loop, streams, buffers, ESM ⇄ CommonJS
-- REST API design, versioning, consistent response envelopes
-- **Auth & security:** JWT access + refresh rotation, bcrypt hashing, role-based access control, OTP email verification, password reset, Google OAuth, CORS & trusted origins
-- **Validation:** Zod schemas as middleware, typed request contracts
-- **Error architecture:** custom error classes, global error middleware, ORM error mapping, 404 handling
-- **Process resilience:** `uncaughtException`, `unhandledRejection`, `SIGTERM` / `SIGINT` graceful shutdown
-- Reusable query builder — search, filter, sort, paginate, field selection, dynamic relation includes
-- File uploads via Multer → Cloudinary, with cleanup
-- Stripe checkout + webhook handling, idempotent payment state
-- Cron jobs for scheduled/auto-expiring workflows
-- Transactional writes, server-side PDF generation, transactional email
-
-</td>
-<td width="50%" valign="top">
-
-### 🤖 AI / LLM Engineering &nbsp;`growth track`
-
-- **LLM app architecture:** prompt templates, structured JSON output, response streaming, retry & backoff, token budgeting, call logging and monitoring
-- **RAG pipelines:** document cleaning, chunking strategy, embedding generation, retrieval, context injection, source grounding to cut hallucination, multi-step RAG, retrieval-relevance evaluation
-- **Vector search:** pgvector in PostgreSQL, index tuning, hybrid keyword + semantic search, embedding optimisation at scale
-- **LangChain:** chains, prompt templates, output parsers, memory & conversation state, tools
-- **LangGraph:** stateful graphs for multi-step and branching agent workflows
-- **LangSmith:** tracing, debugging chains, evaluating agent behaviour
-- **MCP:** exposing tools and context to models via Model Context Protocol
-- **Agents:** tool use, planning loops, autonomous multi-step task execution
-- **Fine-tuning:** dataset prep, OpenAI fine-tune jobs, LoRA / QLoRA, evaluation, and knowing when RAG beats fine-tuning
-- **Chat systems:** conversation history, system prompts, role-based personas, streaming into Next.js
-- **Automation:** self-hosted n8n on Docker, agentic multi-step flows, Slack / email / CRM integration
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗄️ Databases & Data Modeling
-
-- PostgreSQL — advanced SQL, all join types, aggregates, `COALESCE`, `GROUP BY … HAVING`
-- ER modeling, cardinality, super / candidate / composite / foreign keys
-- Normalization 1NF → 3NF, anomaly resolution, junction tables
-- **Prisma ORM:** schema design, migrations, relations & enums, self-relations, indexing & mapping, multi-file schema, transactions, upsert
-- Offset **and** cursor-based pagination with metadata
-- Query optimisation fundamentals, seeding strategies
-- pgvector for embedding storage and similarity search
-- Also worked with MongoDB, MySQL, Supabase, Neon serverless Postgres
-
-### 🧮 ML & Deep Learning
-
-- Supervised, unsupervised & reinforcement learning concepts
-- Feature engineering, preprocessing, train/val/test discipline
-- Model evaluation, metric selection, overfitting diagnosis
-- Deep learning architectures and training loops
-- NLP and text processing, transformer intuition
-- NumPy · Pandas · Matplotlib · Scikit-learn · TensorFlow · Keras · PyTorch
-
-</td>
-<td width="50%" valign="top">
-
-### 🎨 Frontend — Next.js & React
-
-- App Router: file-system routing, route groups, **parallel routes**, nested and role-based layouts
-- Server Components & **Server Actions**, client/server boundary discipline
-- Caching strategy: SSG · ISR · SSR + **on-demand revalidation**
-- Route protection via proxy/middleware, cookie sessions, refresh-token rotation on the client
-- **TanStack Query** with prefetch + dehydrate/hydrate, **TanStack Table**, **TanStack Form**
-- Reusable data tables — server-driven sort, filter, search, pagination, action columns, status badges
-- Dashboards: stats cards, bar & pie charts, dynamic role-based sidebars, icon mappers
-- Type-safe environment validation, typed Axios HTTP client layer
-- Tailwind CSS + shadcn/ui, dark mode without hydration errors
-- React fundamentals: hooks, composition, reusable custom hooks
-
-### 🔷 TypeScript Depth
-
-- Generics, generic constraints, `keyof` constraints
-- Conditional types, mapped types, utility types
-- Interfaces, type aliases, union & intersection, literal types
-- Type guards — `typeof`, `in`, `instanceof`, discriminated unions
-- OOP: classes, inheritance, polymorphism, abstraction, encapsulation, access modifiers, getters/setters, statics
-
-</td>
-</tr>
-
-</table>
-
-</td>
-</tr>
-</table>
-
----
-
-## 🚀 &nbsp; Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">📄 DocuMind — Document Q&A</h3>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes/DocuMind">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=DocuMind&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="DocuMind repository" />
+<p align="center">
+  <a href="https://github.com/SajidurCodes?tab=repositories">
+    <img src="https://img.shields.io/badge/Browse_all_repositories-162733?style=for-the-badge&logo=github&logoColor=35DDA5" alt="Browse all repositories" />
   </a>
-</div>
+</p>
 
-Turns PDF and TXT documents into searchable answers using keyword-based RAG and Groq, preserving PDF page references through extraction, storage, and retrieval; verified with **13 passing regression tests**.
+## 🛠️ Technical skills
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=FFD43B" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-111111?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Groq-111111?style=flat-square&logoColor=F55036" alt="Groq" />
-  <img src="https://img.shields.io/badge/SQLite-111111?style=flat-square&logo=sqlite&logoColor=74C0FC" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Render-111111?style=flat-square&logo=render&logoColor=white" alt="Render" />
-</div>
+<p align="center">
+  <img
+    src="https://skillicons.dev/icons?i=ts,js,nodejs,express,postgres,prisma,mongodb,react,nextjs,tailwind,python,fastapi,pytorch,git&theme=dark&perline=7"
+    alt="TypeScript, JavaScript, Node.js, Express, PostgreSQL, Prisma, MongoDB, React, Next.js, Tailwind CSS, Python, FastAPI, PyTorch, Git"
+  />
+</p>
 
-<div align="center">
-  <a href="https://github.com/SajidurCodes/DocuMind"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
-  <a href="https://documind-vc21.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=render&logoColor=white" alt="Live demo" /></a>
-</div>
+| Area | Hands-on experience |
+| --- | --- |
+| **Backend development** | REST APIs with Node.js, Express, TypeScript, and FastAPI. JWT authentication, role-based authorization, and request validation. |
+| **Databases** | Relational modeling with PostgreSQL and Prisma, MongoDB with Mongoose, and SQLite for document storage. |
+| **Full-stack development** | React and Next.js dashboards, protected routes, search and filters, and forms with Zod validation. |
+| **Payments** | Stripe Checkout, signed payment webhooks, and SSLCommerz booking payments. |
+| **AI integration** | Groq API, keyword-based retrieval, page citations, LangChain routing, Pydantic responses, and MCP tools. |
+| **Machine learning** | Model comparison, calibration, threshold selection, scikit-learn, and PyTorch fundamentals. |
 
-</td>
-<td width="50%" valign="top">
+## 🎓 Education and research
 
-<h3 align="center">🤖 TODO: Project Two Title</h3>
+**B.Sc. in Computer Science and Engineering, BRAC University**  
+Dhaka, Bangladesh · September 2022 – September 2026
 
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-2">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-2&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project two" />
-  </a>
-</div>
+For our undergraduate thesis, my team studied crop-yield prediction under data scarcity. We compared centralized and federated learning using agricultural and climate records, then evaluated how fine-tuning a model for Bangladesh affected its prediction error.
 
-**TODO:** If you have an AI/RAG project, put it here — this is the slot an AI-role recruiter looks at first. Mention the retrieval approach and any measurable result.
+## 📊 GitHub activity
 
-<div align="center">
-  <img src="https://img.shields.io/badge/LangChain-111111?style=flat-square&logo=langchain&logoColor=00F5A0" alt="LangChain" />
-  <img src="https://img.shields.io/badge/pgvector-111111?style=flat-square&logo=postgresql&logoColor=4169E1" alt="pgvector" />
-  <img src="https://img.shields.io/badge/OpenAI-111111?style=flat-square&logo=openai&logoColor=00A67E" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Next.js-111111?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-</div>
+<p align="center">
+  <img src="./profile/stats.svg" width="48%" alt="Sajidur's GitHub statistics" />
+  <img src="./profile/top-langs.svg" width="48%" alt="Language distribution across Sajidur's repositories" />
+</p>
 
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-2"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a>
-</div>
+### 🐍 Contribution snake
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">🧠 TODO: Project Three Title</h3>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-3">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-3&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project three" />
-  </a>
-</div>
-
-**TODO:** A good third slot is an ML/data project — dataset, model, and the metric you got. Numbers beat adjectives.
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=FFD43B" alt="Python" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-111111?style=flat-square&logo=scikitlearn&logoColor=F7931E" alt="Scikit-learn" />
-  <img src="https://img.shields.io/badge/Pandas-111111?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-3"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Notebook-0D1117?style=for-the-badge&logo=jupyter&logoColor=F37626" alt="Notebook" /></a>
-</div>
-
-</td>
-<td width="50%" valign="top">
-
-<h3 align="center">🌐 TODO: Project Four Title</h3>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-4">
-    <img src="https://github-stats-extended.vercel.app/api/pin/?username=SajidurCodes&repo=REPO-NAME-4&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5A0&icon_color=00F5A0&text_color=C9D1D9" alt="Project four" />
-  </a>
-</div>
-
-**TODO:** Use this slot for a full-stack product with a live URL. A working deployed link converts better than any README section.
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Next.js-111111?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-111111?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind-111111?style=flat-square&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Stripe-111111?style=flat-square&logo=stripe&logoColor=635BFF" alt="Stripe" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes/REPO-NAME-4"><img src="https://img.shields.io/badge/Code-00F5A0?style=for-the-badge&logo=github&logoColor=0D1117" alt="Code" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a>
-</div>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-  <a href="https://github.com/SajidurCodes?tab=repositories"><img src="https://img.shields.io/badge/Browse_All_Repositories-0D1117?style=for-the-badge&logo=github&logoColor=00F5A0" alt="Browse all repositories" /></a>
-</div>
-
----
-
-## 🧩 &nbsp; What I Build
-
-```txt
-Backend Systems     →  REST APIs, layered architecture, auth & RBAC, payments, file pipelines
-AI Applications     →  Chat assistants, summarizers, document intelligence, AI-powered tools
-RAG Systems         →  Document QA, semantic + hybrid search, knowledge-grounded generation
-AI Agents           →  Tool-using agents, multi-step planning, LangGraph state machines
-ML Systems          →  Preprocessing, training, evaluation, deployment-ready models
-Data Systems        →  Relational modeling, ETL-style workflows, analytics-ready schemas
-Full-Stack Products →  Next.js + Node/Express + PostgreSQL + Prisma, deployed and monitored
-Automations         →  n8n workflows, cron jobs, webhook-driven background processing
-```
-
----
-
-## 📊 &nbsp; GitHub Analytics
-
-<div align="center">
-  <!-- Rendered in CI by .github/workflows/readme-cards.yml and committed to
-       profile/ — static files from this repo, so these cannot rate-limit.
-       Refreshes daily at 04:00 UTC. To retune the styling, edit the `options`
-       query string in that workflow, not this file, then re-run the workflow.
-       Visual editor for the params: https://github-stats-extended.vercel.app/frontend
-
-       A streak card and a contribution activity graph used to sit here. Both
-       were removed on 2026-08-26: they're separate projects with no CI
-       equivalent, they were failing on shared public hosts, and the snake
-       animation below already visualises the same contribution data. -->
-  <img height="180em" src="./profile/stats.svg" alt="Sajidur's GitHub stats" />
-  <img height="180em" src="./profile/top-langs.svg" alt="Top languages" />
-</div>
-
----
-
-## 🐍 &nbsp; Watch My Commits Get Eaten
-
-<div align="center">
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake.svg" />
-    <img alt="Snake animation eating my GitHub contribution graph" src="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake.svg" width="100%" />
+    <img src="https://raw.githubusercontent.com/SajidurCodes/SajidurCodes/output/snake.svg" width="100%" alt="Animated snake moving through Sajidur's GitHub contribution graph" />
   </picture>
-</div>
+</p>
 
-<!-- If the snake shows a broken image: the workflow hasn't run yet.
-     Actions tab > "Generate Snake Animation" > Run workflow.
-     Also confirm Settings > Actions > General > "Read and write permissions". -->
+## 🧩 Problem solving
 
----
+<p align="center">
+  <a href="https://leetcode.com/u/Sajidursiam/">
+    <img
+      src="https://leetcard.jacoblin.cool/Sajidursiam?theme=nord&font=Fira%20Code&ext=heatmap&border=0&radius=12"
+      alt="Sajidur's LeetCode statistics and problem-solving heatmap"
+    />
+  </a>
+</p>
 
-## 🧮 &nbsp; Problem Solving
+## 🌐 Connect
 
-<div align="center">
-  <!-- LeetCode usernames are case-sensitive. If this card is blank,
-       your handle is wrong — check leetcode.com/u/<handle>/ and fix it here. -->
-  <img src="https://leetcard.jacoblin.cool/Sajidursiam?theme=nord&font=Fira%20Code&ext=heatmap&border=0&radius=12" alt="LeetCode stats" />
-</div>
+<p align="center">
+  <a href="https://www.linkedin.com/in/sajidur-rahman-siam-17870b310">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:sajidursiam18@gmail.com">
+    <img src="https://img.shields.io/badge/Email-B54135?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Sajidur" />
+  </a>
+  <a href="https://www.kaggle.com/sajidursiam">
+    <img src="https://img.shields.io/badge/Kaggle-087BA3?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+  </a>
+  <a href="https://medium.com/@sajidursiam18">
+    <img src="https://img.shields.io/badge/Medium-162733?style=for-the-badge&logo=medium&logoColor=white" alt="Medium articles" />
+  </a>
+  <a href="https://x.com/SajidurSiamVai">
+    <img src="https://img.shields.io/badge/X-162733?style=for-the-badge&logo=x&logoColor=white" alt="X profile" />
+  </a>
+</p>
 
----
-
-## 🎯 &nbsp; Right Now
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 📚 Learning
-
-- LangGraph — stateful, branching agent graphs
-- Agent evaluation & observability with LangSmith
-- MCP servers for tool-augmented models
-- Advanced RAG — reranking, query rewriting, hybrid retrieval
-- MLOps: model registries, drift monitoring
-- Deeper data engineering & pipeline orchestration
-
-</td>
-<td width="50%" valign="top">
-
-### 🔨 Building
-
-- RAG-based knowledge assistants over private documents
-- Agentic workflows that call real tools, not just chat
-- Production-grade REST APIs with full auth & error architecture
-- Next.js dashboards on top of my own backends
-- ML projects with honest evaluation, not just notebooks
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <em>“My life is like a Christopher Nolan movie — confusing at first, but somehow it all comes together.”</em> 😅
+</p>
 
 <div align="center">
-
-<br />
-
-<img src="https://img.shields.io/badge/Target_Roles-AI%2FML_Engineer-00F5A0?style=for-the-badge&labelColor=0D1117" alt="Target role: AI/ML Engineer" />
-<img src="https://img.shields.io/badge/-AI_Engineer_(LLM)-00F5A0?style=for-the-badge&labelColor=0D1117" alt="Target role: AI Engineer" />
-<img src="https://img.shields.io/badge/-Full--Stack_Engineer-00F5A0?style=for-the-badge&labelColor=0D1117" alt="Target role: Full-Stack Engineer" />
-
-</div>
-
----
-
-## ✍️ &nbsp; Signing Off
-
-<div align="center">
-  <i>"My life is like a Christopher Nolan movie — confusing at first, but somehow it all comes together."</i> 😅
-  <br /><br />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3200&pause=1200&color=00F5A0&center=true&vCenter=true&width=560&height=35&lines=Thanks+for+scrolling+this+far.;Got+a+backend+or+AI+problem%3F+Let's+talk.;sajidursiam18%40gmail.com" alt="Thanks for scrolling" />
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=130&section=footer" width="100%" alt="" />
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:087F70,50:12344A,100:0D1117&height=110&section=footer&text=Thanks%20for%20visiting&fontSize=20&fontColor=FFFFFF&fontAlignY=70&animation=fadeIn"
+    width="100%"
+    alt="Thanks for visiting"
+  />
 </div>
