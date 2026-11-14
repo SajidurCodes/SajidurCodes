@@ -2,7 +2,7 @@
 
 <div align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:12344A,100:087F70&height=215&section=header&text=Sajidur%20Rahman%20Siam&fontSize=44&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Full-Stack%20Development%20%26%20AI%20Integration&descAlignY=56&descSize=16"
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:12344A,100:087F70&height=215&section=header&text=Sajidur%20Rahman%20Siam&fontSize=44&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Full-Stack%20Development%20and%20AI%20Integration&descAlignY=56&descSize=16"
     width="100%"
     alt="Sajidur Rahman Siam — Backend Developer, Full-Stack Development and AI Integration"
   />
